@@ -1,67 +1,35 @@
-# ===============================
 # Python
-# ===============================
-__pycache__/
-*.py[cod]
-*.class
-
-# Virtual Environment
 .venv/
-venv/
-env/
+__pycache__/
+*.pyc
 
-# Environment Variables
+# Environment
 .env
 
 # Jupyter
 .ipynb_checkpoints/
 
-# VS Code
-.vscode/
-
-# PyCharm
-.idea/
-
-# Testing
-.pytest_cache/
-.coverage
-htmlcov/
-
-# Linting
-.mypy_cache/
-.ruff_cache/
-
-# Build
-build/
-dist/
-*.egg-info/
-
-# Logs
-*.log
-
-# OS Files
+# OS
 .DS_Store
 Thumbs.db
 
-# Model Weights
-*.pt
-*.pth
-*.onnx
+# Datasets (keep local only)
+datasets/
 
-# FAISS
+# Trained Models
+models/*.pt
+models/*.pth
+models/*.onnx
+
+# Vector Database
+*.faiss
 *.index
 
-# OCR Outputs
-*.txt
-*.json
+# Logs
+logs/
 
-# React
-frontend/node_modules/
-frontend/dist/
+# Output Images
+backend/app/vision/outputs/
 
-# Docker
-*.pid
-
-# Temporary Files
-*.tmp
-*.temp
+# VS Code
+.vscode/
